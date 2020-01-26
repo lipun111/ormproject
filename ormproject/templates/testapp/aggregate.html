@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container" align="center">
+      <div class="jumbotron">
+      <h1 align="center">Aggregate Information</h1><hr>
+      <ul>
+        <li>Average Salary:{{avg.esal__avg}}</li>
+        <li>Max Salary:{{max.esal__max}}</li>
+        <li>Min Salary:{{min.esal__min}}</li>
+        <li>Total Salary:{{sum.esal__sum}}</li>
+        <li>Total No of Employee:{{count.esal__count}}</li>
+      </ul>
+    </div>
+      </div>
+  </body>
+</html>
